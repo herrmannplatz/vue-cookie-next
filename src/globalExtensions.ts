@@ -1,8 +1,8 @@
 
 import { IVueCookieNext } from './VueCookieNext'
 
-declare module '@vue/runtime-core' {
-  export interface ComponentCustomProperties {
+declare module 'vue' {
+  interface ComponentCustomProperties {
     $cookie: IVueCookieNext
   }
 }
